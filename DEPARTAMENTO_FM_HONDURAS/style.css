@@ -1,0 +1,125 @@
+/* Fondo para todos los HTML en esta carpeta */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("imagenes de fondo/FM fondo.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: #ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.page-shell {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 20px 16px 24px;
+}
+
+.content-panel, .content-wrapper {
+	background: rgba(8, 15, 30, 0.62);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 14px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.content-panel {
+	padding: 18px 20px;
+	margin-bottom: 16px;
+}
+
+.content-panel h1,
+.content-panel h3,
+.content-panel p {
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón volver */
+.volver {
+	position: fixed;
+	top: 14px;
+	left: 14px;
+	display: inline-block;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	padding: 8px 12px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 600;
+	z-index: 1000;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.24);
+}
+
+.volver:hover {
+	background: rgba(0,0,0,0.85);
+}
+
+.content-wrapper {
+	padding: 48px 16px 16px;
+}
+
+/* Enlaces: evitar color azul por defecto, mejorar legibilidad */
+a, a:link, a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	color: #ffeb99;
+	text-decoration: underline;
+}
+
+/* Nuevo estilo de tarjetas para municipios */
+.section-note {
+	margin-top: 12px;
+	font-weight: 600;
+	color: #f3f4f6;
+}
+
+.municipios-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 12px;
+	margin: 18px 0 0;
+}
+
+.municipio-card {
+	display: inline-block;
+	padding: 12px 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: 700;
+	border-radius: 10px;
+	background: linear-gradient(135deg, #3b82f6, #7c3aed);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.28);
+	transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+	border: 1px solid rgba(255,255,255,0.08);
+}
+
+.municipio-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 30px rgba(0,0,0,0.34);
+	filter: brightness(1.05);
+}
+
+.site-footer {
+	text-align: center;
+	padding: 16px 12px 24px;
+	margin-top: 20px;
+	font-size: 0.95rem;
+	color: #f3f4f6;
+	opacity: 0.95;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+
